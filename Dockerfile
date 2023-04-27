@@ -1,5 +1,5 @@
 
-FROM amazoncorrectto:8-alpine-jdk
+FROM amazoncorrectto:8-jdk
 
 COPY target/arg.prog-0.0.1-SNAPSHOT.jar app.jar
 
