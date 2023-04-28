@@ -1,6 +1,6 @@
 
-FROM amazoncorrectto:8-jdk
+FROM amazoncorretto:8
+MAINTAINER evelynrusso
+COPY target/arg.prog-0.0.1-SNAPSHOT.jar arg.prog-0.0.1-SNAPSHOT.jar 
 
-COPY target/arg.prog-0.0.1-SNAPSHOT.jar app.jar
-
-ENTRYPOINT ["java","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/arg.prog-0.0.1-SNAPSHOT.jar"]
