@@ -27,13 +27,14 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "http://localhost:4200")
 public class CPersona {
     
+    @Autowired 
+   SPersona sPersona;
+    
     //Login
     @PostMapping("/login")
       public Persona loginPersona(@RequestBody Persona pers){
           return sPersona.loginPersona(pers.getEmail(), pers.getClave());}
             
-    @Autowired 
-   SPersona sPersona;
     
     @GetMapping("/lista")
     public List<Persona> getPersona(){
