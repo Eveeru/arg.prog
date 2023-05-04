@@ -31,7 +31,7 @@ public class CPersona {
    SPersona sPersona;
     
     //Login
-    @PostMapping("/login")
+    @PostMapping("/autenticacion/login")
     @ResponseBody 
       public Persona loginPersona(@RequestBody Persona pers){
           return sPersona.loginPersona(pers.getEmail(), pers.getClave());}
