@@ -20,4 +20,3 @@ com\portfolio\arg\prog\entity\Experiencia.class
 com\portfolio\arg\prog\repository\RPersona.class
 com\portfolio\arg\prog\repository\REducacion.class
 com\portfolio\arg\prog\repository\RExperiencia.class
-com\portfolio\arg\prog\Application$1.class
