@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("progreso")//localhost:8080/progreso
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://frontend-1eeaa.web.app")
 public class CProgreso {
     @Autowired 
     SProgreso progServ;

@@ -1,5 +1,4 @@
-
-FROM amazoncorretto:8-alpine-jdk
+FROM amazoncorretto:8-jdk
 
 MAINTAINER evelynrusso
 

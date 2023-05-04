@@ -5,35 +5,29 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
 @Entity
-@Table(name="Persona")
+@Table(name="persona")
 public class Persona {
      //atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    
-    
+     
     @Size(min = 1, max = 50, message = "no cumple con la logitud")
     private String nombre;
-    
      
     @Size(min = 1, max = 50, message = "no cumple con la logitud")
     private String apellido;
      
-    @Lob
-    @Size(min = 1, max = 255, message = "no cumple con la logitud")
+    @Size(min = 1, max = 300, message = "no cumple con la logitud")
     private String presentacion;
-    
      
     @Size(min = 1, max = 50, message = "no cumple con la logitud")
-    private String tituloperfil;
-     
+    private String tituloperfil; 
       
     @Size(min = 1, max = 50, message = "no cumple con la logitud")
     private String imagen;
@@ -41,7 +35,6 @@ public class Persona {
     @NotBlank
     private String clave;
     
-    @Lob
     private String email;
     
     //contructores
