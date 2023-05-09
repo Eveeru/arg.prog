@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.portfolio</groupId>
-    <artifactId>arg.prog</artifactId>
+    <artifactId>back</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>arg.prog</name>
     <description>Portfolio Eve para argentina programa</description>
