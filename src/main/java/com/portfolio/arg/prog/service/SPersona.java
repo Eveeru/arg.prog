@@ -34,17 +34,5 @@ public class SPersona {
         Persona persona = rPersona.findById(id).orElse(null);
         return persona;
     }
-    
-        public Persona loginPersona(String email, String clave) {
-        List <Persona> personas = rPersona.findByEmailAndClave(email, clave);
-        if(!personas.isEmpty()){
-            return personas.get(0); 
-        }
-        return null;
-    }
-
-   
-   
-    
-   
+ 
 }

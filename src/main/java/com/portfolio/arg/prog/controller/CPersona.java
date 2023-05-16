@@ -30,13 +30,6 @@ public class CPersona {
     @Autowired 
    SPersona sPersona;
     
-    //Login
-    @PostMapping("/autenticacion/login")
-    @ResponseBody 
-      public Persona loginPersona(@RequestBody Persona pers){
-          return sPersona.loginPersona(pers.getEmail(), pers.getClave());}
-            
-    
     @GetMapping("/lista")
     @ResponseBody 
     public List<Persona> getPersona(){
