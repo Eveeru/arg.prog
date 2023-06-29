@@ -6,7 +6,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 
 @Entity
@@ -32,10 +31,7 @@ public class Persona {
     @Size(min = 1, max = 50, message = "no cumple con la logitud")
     private String imagen;
     
-    @NotBlank
-    private String clave;
-    
-    private String email;
+   
     
     //contructores
     public Persona() {
@@ -47,8 +43,7 @@ public class Persona {
         this.presentacion = presentacion;
         this.tituloperfil = tituloperfil;
         this.imagen = imagen;
-        this.clave = clave;
-        this.email = email;
+       
     }
 
    
@@ -101,22 +96,6 @@ public class Persona {
 
     public void setImagen(String imagen) {
         this.imagen = imagen;
-    }
-
-    public String getClave() {
-        return clave;
-    }
-
-    public void setClave(String clave) {
-        this.clave = clave;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
     
     
